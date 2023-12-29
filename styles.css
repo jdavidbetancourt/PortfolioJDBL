@@ -1,0 +1,78 @@
+/*--------------------------- Universal styles --------------------------*/
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;   
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --main-bg-color: #ff7b00;
+    --secondary-bg-color: #343a40;
+    --main-txt-color: white;
+    --secondary-txt-color: black;
+}
+
+/*-------------------------------- General styles --------------------------*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--main-bg-color);
+}
+
+/* Navigation bar */
+.navbar {
+    padding: 2rem;
+    background-color: var(--main-bg-color);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: var(--main-txt-color);
+    font-size: 1.4rem;
+    margin-left: 2rem;
+}
+
+.navbar a:hover {
+    color: var(--secondary-txt-color);
+    transition: 1s;
+}
+
+.navbar-toggler {
+    background-color: var(--main-txt-color);
+    border: none;
+}
+
+/*---------------------------------- Hero ----------------------------------*/
+
+.hero {
+    background-color: var(--secondary-bg-color);
+    min-height: 45rem;
+    text-align: center;
+    color: var(--main-txt-color);
+}
+
+
+
+
+
+/*------------------------------- Responsive -------------------------------*/
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
