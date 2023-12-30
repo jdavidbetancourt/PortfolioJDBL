@@ -6,73 +6,217 @@
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  font-family: 'Oswald', sans-serif;
 }
 
 :root {
-    --main-bg-color: #ff7b00;
-    --secondary-bg-color: #343a40;
-    --main-txt-color: white;
-    --secondary-txt-color: black;
+  --main-bg-color: #ff7b00;
+  --secondary-bg-color: rgb(32, 32, 32);
+  --third-bg-color: black;
+  --main-txt-color: white;
 }
 
 /*-------------------------------- General styles --------------------------*/
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: var(--main-bg-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--main-bg-color);
+
 }
 
-/* Navigation bar */
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1.5rem 0;
+}
+
+/*-------------------------------- Navigation bar --------------------------*/
 .navbar {
-    padding: 2rem;
-    background-color: var(--main-bg-color);
+  padding: 2rem;
+  background-color: var(--main-bg-color);
 }
 
 .navbar-collapse {
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar a {
-    color: var(--main-txt-color);
-    font-size: 1.4rem;
-    margin-left: 2rem;
+  color: var(--main-txt-color);
+  font-size: 1.6rem;
+  margin-left: 2rem;
 }
 
+
 .navbar a:hover {
-    color: var(--secondary-txt-color);
-    transition: 1s;
+  color: var(--secondary-txt-color);
+  transition: 1s;
+}
+
+.bi-code-square {
+  font-size: 2rem;
 }
 
 .navbar-toggler {
-    background-color: var(--main-txt-color);
-    border: none;
+  background-color: var(--main-txt-color);
+  border: none;
+  align-self: center;
 }
+
 
 /*---------------------------------- Hero ----------------------------------*/
 
 .hero {
-    background-color: var(--secondary-bg-color);
-    min-height: 45rem;
-    text-align: center;
-    color: var(--main-txt-color);
+  background-color: var(--secondary-bg-color);
+  min-height: 45rem;
+  text-align: center;
+  color: var(--main-txt-color);
+}
+
+.main-hero {
+  padding: 3rem;
+}
+
+.hero div .profile-img {
+  width: 25rem;
+  height: auto;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.hero .second-hero {
+  margin: 2rem 10rem 3rem 10rem;
+  display: flex;
+}
+
+.second-hero div {
+  flex-direction: column;
+  text-align: center;
+}
+
+.second-hero div h3 {
+  margin-top: 1rem;
+  color: var(--main-txt-color);
+  font-weight: bold;
+}
+
+.second-hero div:nth-child(4) h3 {
+  margin-top: 0rem;
 }
 
 
 
+.hero .second-hero .icon1 {
+  width: 10rem;
+  height: auto;
+}
+.hero .second-hero .icon2 {
+  margin-top: .8rem;
+  width: 9rem;
+  height: auto;
+}
+.hero .second-hero .icon3 {
+  margin-top: .3rem;
+  width: 9rem;
+  border-radius: 1rem;
+  height: auto;
+}
+.hero .second-hero .icon4 {
+  margin-top: -.5rem;
+  width: 10.9rem;
+  height: auto;
+}
+.hero .second-hero .icon5 {
+  width: 9.5rem;
+  height: auto;
+}
+
+.description {
+  margin: 2rem auto 0 auto;
+}
+
+/*-------------------------------- About me ---------------------------------*/
+
+.about-me {
+  background-color: var(--third-bg-color);
+  min-height: 45rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.title2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--main-bg-color);
+}
+
+.about-me p {
+  color: var(--main-txt-color);
+}
+
+/*------------------------------- Experience -------------------------------*/
+
+.experience {
+  padding: 4rem 4rem 6rem 4rem;
+  color: var(--main-txt-color);
+  background-color: var(--secondary-bg-color);
+
+}
+
+.experience .row div {
+  margin-top: 4rem;
+  height: 45rem;
+
+}
+
+.bi-laptop,
+.bi-backpack2-fill {
+  color: var(--main-txt-color);
+  font-size: 5rem;
+  border-radius: 50%;
+}
+
+.xp-title1,
+.xp-title2 {
+  margin: 2rem auto 0 auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--main-bg-color);  
+}
 
 
 /*------------------------------- Responsive -------------------------------*/
 
-@media screen and (max-width: 767px) {
-    .navbar-brand {
-        display: none;
-    }
+@media screen and (min-width: 768px) {
+  .navbar {
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  .hero .second-hero {
+    margin: 2rem auto 3rem auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero .second-hero {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+

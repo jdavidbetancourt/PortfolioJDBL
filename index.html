@@ -16,7 +16,13 @@
   <!-- To use bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <!-- Import CSS styles -->
-  <link rel="stylesheet" href="./styles.css">   
+  <link rel="stylesheet" href="./styles.css">  
+  <!-- Import font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,15 +34,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">
-          <a class="navbar-brand" href="#">
-            <span><i class="bi bi-laptop" alt="webpage-icon"></i></span>
+          <a class="navbar-brand" href="#hero">
+            <span><i class="bi bi-code-square"></i></span>
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="#">About me</a>
+              <a class="nav-link" href="#about-me">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#experience">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Recommendations</a>
@@ -52,11 +58,62 @@
   
   <main>
     <!-- Hero section -->
-    <section class="hero align-items-stretch">
-      <div>
-        <img src="./images/imgs/profile-img.png" alt="Foto de perfil Juan Betancourt">
-        <h1>Hey, I'm Juan Betancourt</h1>
-        <p>I develop web pages and also do image and video design. Over the years I have learned other areas of design such as 3D animation, this more focused on video game development.</p>
+    <section id="hero" class="hero align-items-stretch">
+      <div class="main-hero d-flex flex-column justify-content-center align-items-center">
+        <img class="profile-img rounded-circle" src="./images/imgs/profile-img.png" alt="Foto de perfil Juan Betancourt">
+        <h1 class="title1">Hey, I'm Juan Betancourt</h1>
+        <p class="description">I develop web pages and also do image and video design. Over the years I have learned other areas of design such as 3D animation, this more focused on video game development. Currently I have added technologies such as:</p>
+      </div>
+      <div class="second-hero d-flex flex-direction-row justify-content-around align-items-center">
+        <div class="d-flex flex-direction-column justify-content-center align-items-center">
+            <img src="./images/icons/html-5-svgrepo-com.svg" alt="Logo de HTML" class="icon1 image-fluid">
+            <h3>HTML</h3>
+        </div>
+        <div class="d-flex flex-direction-column justify-content-center align-items-center">
+            <img src="./images/icons/css3-svgrepo-com.svg" alt="Logo de CSS" class="icon2 image-fluid">
+            <h3>CSS</h3>
+        </div>
+        <div class="d-flex flex-direction-column justify-content-center align-items-center">
+            <img src="./images/icons/javascript-svgrepo-com.svg" alt="Logo de JavaScript" class="icon3 image-fluid">
+            <h3>JavaScript</h3>
+        </div>
+        <div class="d-flex flex-direction-column justify-content-center align-items-center">
+            <img src="./images/icons/react-logo-programming-2-svgrepo-com.svg" alt="Logo de ReactJS" class="icon4 image-fluid">
+            <h3>React</h3>
+        </div>
+        <div class="d-flex flex-direction-column justify-content-center align-items-center">
+            <img src="./images/icons/bootstrap-svgrepo-com.svg" alt="Logo de Bootstrap" class="icon5 image-fluid">
+            <h3>Bootstrap</h3>
+        </div>
+      </div>
+    
+    </section>
+    
+    <!-- About me -->
+    <section id="about-me" class="about-me dark-section">
+      <div class=" d-flex flex-column justify-content-center align-items-center">
+        <h2 class="title2">Know me</h2>
+        <p class="description">Since I was little I have been fascinated by art, I started drawing at an early age. I also remember spending hours playing Pokemon, so yes, I love video games, I enjoy watching series, movies and of course last but most importantly I am passionate about web design, I am just taking my first steps but I am sure that this will be the way correct.</p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Web design -->
+          <div class="col-12 col-md-6">
+            <i class="bi bi-laptop" alt="webpage-icon"></i>
+            <p class="xp-title1">Web design</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia voluptate facere consectetur consequatur et libero, corporis cupiditate voluptates mollitia necessitatibus maxime voluptatibus velit quas assumenda adipisci.</p>
+          </div>
+          <!-- Student -->
+          <div class="col-12 col-md-6">
+            <i class="bi bi-backpack2-fill"></i>
+            <p class="xp-title2">Like Student</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia voluptate facere consectetur consequatur et libero, corporis cupiditate voluptates mollitia necessitatibus maxime voluptatibus velit quas assumenda adipisci.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
