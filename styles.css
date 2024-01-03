@@ -102,6 +102,12 @@ p {
   text-align: center;
 }
 
+.second-hero div img {
+  width: 3rem;
+  height: auto;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(173deg) brightness(109%) contrast(100%);
+}
+
 .second-hero div h3 {
   margin-top: 1rem;
   color: var(--main-txt-color);
@@ -110,33 +116,6 @@ p {
 
 .second-hero div:nth-child(4) h3 {
   margin-top: 0rem;
-}
-
-
-
-.hero .second-hero .icon1 {
-  width: 10rem;
-  height: auto;
-}
-.hero .second-hero .icon2 {
-  margin-top: .8rem;
-  width: 9rem;
-  height: auto;
-}
-.hero .second-hero .icon3 {
-  margin-top: .3rem;
-  width: 9rem;
-  border-radius: 1rem;
-  height: auto;
-}
-.hero .second-hero .icon4 {
-  margin-top: -.5rem;
-  width: 10.9rem;
-  height: auto;
-}
-.hero .second-hero .icon5 {
-  width: 9.5rem;
-  height: auto;
 }
 
 .description {
@@ -186,6 +165,12 @@ p {
   border-radius: 50%;
 }
 
+.bi-laptop:hover,
+.bi-backpack2-fill:hover {
+  color: black;
+  transition: all 1s ease-in;
+}
+
 .xp-title1,
 .xp-title2 {
   margin: 2rem auto 0 auto;
@@ -205,17 +190,25 @@ p {
   margin: 1rem 0 0;
 }
 
+.badge:hover {
+  color: white;
+  background-color: black;
+  transition: all 1s ease-in;
+}
+
 .column {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  transition: all 1s ease-in;
+  transition: all .5s ease-in;
 }
 
 .column:hover {
   color: var(--secondary-bg-color);
   background-color: white;
+  border-radius: 3rem;
+  overflow: hidden;
 }
 
 /*------------------------------- Projects -------------------------------*/
@@ -294,6 +287,122 @@ p {
   margin: 1rem;
 }
 
+/*------------------------------- Contact -------------------------------*/
+
+.contact .container {
+  max-width: 110rem;
+  min-height: 10rem;
+  padding: 2rem;
+}
+
+.contact .rectangle {
+  max-width: 90rem;
+  margin-top: -7rem;
+  background-color: var(--main-bg-color);
+  border-radius: 1rem;
+}
+
+.contact .row {
+  width: 100%;
+  display: flex;
+}
+
+.contact {
+  background-color: var(--third-bg-color);
+}
+
+.title-section {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--third-bg-color);
+}
+
+.contact .description-section {
+  color: var(--main-txt-color);
+  font-size: 1.5rem;
+}
+
+.contact button {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: .2rem solid white;
+  padding: 1.25em 2em;
+  border-radius: 10rem;
+  transition: all 1s ease-in-out;
+}
+
+.contact button i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 1s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact button:hover i {
+  color: black;
+}
+
+/*------------------------------- Footer -------------------------------*/
+
+footer {
+  background-color: var(--third-bg-color);
+  min-height: 30rem;
+}
+
+.footer-logo {
+  color: #ff7b00;
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+.footer-txt {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1.5rem 0;
+  color: var(--main-txt-color);
+}
+
+.social-media-icons a {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  margin: 1rem;
+  border: .2rem solid white;
+  border-radius: 50%;
+  transition: all 1s ease-in;
+}
+
+.social-media-icons i {
+  color: white;
+  font-size: 2rem;
+  transition: all 1s ease-in;
+}
+
+.social-media-icons a:hover {
+  background-color: white;
+  border: .2rem solid var(--main-bg-color);
+}
+
+.social-media-icons i:hover {
+  color: black;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  color: #aeaeae;
+  margin-top: 2rem;
+}
+
+
 /*------------------------------- Responsive -------------------------------*/
 
 @media screen and (min-width: 768px) {
@@ -308,7 +417,14 @@ p {
     display: none;
   }
   .hero .second-hero {
-    margin: 2rem auto 3rem auto;
+    margin: 1rem 8rem 5rem 8rem;
+    justify-content: space-between;
+
+  }
+  .contact .row .title-section,
+  .contact .row .description-section,
+  .contact .row .email {
+    margin-bottom: 2rem;
   }
 }
 

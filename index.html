@@ -39,16 +39,16 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="#about-me">About me</a>
+              <a class="nav-link" href="#hero">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experience">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Recommendations</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,24 +66,24 @@
       </div>
       <div class="second-hero d-flex flex-direction-row justify-content-around align-items-center">
         <div class="d-flex flex-direction-column justify-content-center align-items-center">
-            <img src="./images/icons/html-5-svgrepo-com.svg" alt="Logo de HTML" class="icon1 image-fluid">
-            <h3>HTML</h3>
+            <img class="tech-icon" src="./images/icons/html5.svg" alt="Logo de HTML">
+            
         </div>
         <div class="d-flex flex-direction-column justify-content-center align-items-center">
-            <img src="./images/icons/css3-svgrepo-com.svg" alt="Logo de CSS" class="icon2 image-fluid">
-            <h3>CSS</h3>
+            <img class="tech-icon" src="./images/icons/css3-alt.svg" alt="Logo de CSS" class="icon2 image-fluid">
+            
         </div>
         <div class="d-flex flex-direction-column justify-content-center align-items-center">
-            <img src="./images/icons/javascript-svgrepo-com.svg" alt="Logo de JavaScript" class="icon3 image-fluid">
-            <h3>JavaScript</h3>
+            <img class="tech-icon" src="./images/icons/js.svg" alt="Logo de JavaScript" class="icon3 image-fluid">
+            
         </div>
         <div class="d-flex flex-direction-column justify-content-center align-items-center">
-            <img src="./images/icons/react-logo-programming-2-svgrepo-com.svg" alt="Logo de ReactJS" class="icon4 image-fluid">
-            <h3>React</h3>
+            <img class="tech-icon" src="./images/icons/react.svg" alt="Logo de ReactJS" class="icon4 image-fluid">
+            
         </div>
         <div class="d-flex flex-direction-column justify-content-center align-items-center">
-            <img src="./images/icons/bootstrap-svgrepo-com.svg" alt="Logo de Bootstrap" class="icon5 image-fluid">
-            <h3>Bootstrap</h3>
+            <img class="tech-icon" src="./images/icons/bootstrap.svg" alt="Logo de Bootstrap" class="icon5 image-fluid">
+           
         </div>
       </div>
     
@@ -107,11 +107,11 @@
             <p class="xp-title1">Web design</p>
             <p>I have learned technologies that have helped me do everything from the layout of a page to a simulation of its deployment using React and Netlify. On the other hand, I always back up all my work using remote repositories on GitHub.</p>
             <div class="badges-container">
-              <span class="badge text-bg-primary">HTML</span>
-              <span class="badge text-bg-primary">CSS</span>
-              <span class="badge text-bg-primary">JavaScript</span>
-              <span class="badge text-bg-primary">React</span>
-              <span class="badge text-bg-primary">Git/Github</span>
+              <span class="badge text-bg-light">HTML</span>
+              <span class="badge text-bg-light">CSS</span>
+              <span class="badge text-bg-light">JavaScript</span>
+              <span class="badge text-bg-light">React</span>
+              <span class="badge text-bg-light">Git/Github</span>
             </div>
 
           </div>
@@ -121,9 +121,9 @@
             <p class="xp-title2">Like Student</p>
             <p>I can support the knowledge acquired with their respective certifications, since I have a professional career as a systems engineer, a technologist in video game development and different courses on platforms such as Platzi and YouTube.</p>
             <div class="badges-container">
-              <span class="badge text-bg-primary">Universidad del Tolima</span>
-              <span class="badge text-bg-primary">SENA</span>
-              <span class="badge text-bg-primary">Platzi</span>
+              <span class="badge text-bg-light">Universidad del Tolima</span>
+              <span class="badge text-bg-light">SENA</span>
+              <span class="badge text-bg-light">Platzi</span>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="projects d-flex flex-column">
+    <section id="projects" class="projects d-flex flex-column">
       <h2 class="title3">Some projects...</h2>
       <p class="description">Although I still do not have professional experience, I have developed exercises that help me improve my skills and where I can apply what I am learning like each different technology.</p>
       <!-- Projects gallery -->
@@ -210,8 +210,54 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="container text-center rectangle d-flex justify-content-evenly">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 title-section">
+              Let's talk!
+            </div>
+            <div class="col-12 col-md-4 description-section">
+              I will be happy to start your web development project.
+            </div>
+            <div class="col-12 col-md-4 email">
+              <a href="mailto:jdavidbl96@gmail.com">
+                <button type="button">
+                  Contact
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
     
   </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="d-flex flex-column align-items-center justify-content-center">
+    <span><i class="footer-logo bi bi-code-square"></i></span>
+    <p class="footer-txt text-center">I learn and create every day...<br>Let's do something together!</p>
+    <div class="social-media-icons d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://github.com/jdavidbetancourt/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jdbl16/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=1828676727&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/david_betancourt16?igshid=NGVhN2U2NjQ0Yg==" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+    <div class="copyright">Created by Juan Betancourt || 2024 &#169;</div>
+  </footer>
   
   
 
